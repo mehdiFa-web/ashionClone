@@ -32,6 +32,9 @@ body {
 }
 
 
+.newproducts-container {
+    max-width: 70rem;
+}
 @screen md {
     .main-grid {
         grid-template-columns: repeat(2, 1fr);
