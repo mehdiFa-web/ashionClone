@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+
+
+@font-face {
+    font-family: "Cookie";
+    src: url('../fonts/Cookie-Regular.ttf');
+
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.login-register a:last-child::before {
+    content:" / ";
+}
+
+
+.nav-transition {
+    transition: width .3s ease-in-out;
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 15px;
+}
+
+
+@screen md {
+    .main-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .col-1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
+@screen lg {
+
+    .main-grid {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(8, 4.25rem);
+        gap: 15px;
+    }
+    
+    
+    
+    
+    .col-1 {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 9;
+    }
+    
+    
+    .col-2 {
+        grid-column-start: 5;
+        grid-column-end: 7;
+        grid-row-start: 1;
+        grid-row-end: 5;
+    }
+    .col-3 {
+        grid-column-start: 7;
+        grid-column-end: 9;
+        grid-row-start: 1;
+        grid-row-end: 5;
+    }
+    .col-4 {
+        grid-column-start: 5;
+        grid-column-end: 7;
+        grid-row-start: 5;
+        grid-row-end: 9;
+    }
+    .col-5 {
+        grid-column-start: 7;
+        grid-column-end: 9;
+        grid-row-start: 5;
+        grid-row-end: 9;
+    }
+}
+.card {
+    position: relative;
+}
+.card .img-wrapper img {
+    @apply h-full object-cover w-full;
+}
+.card .card-content {
+    @apply absolute inset-0 px-10 flex  items-center;
+
+}
+
+
+
+
+.card .card-content h1  {
+    font-family: 'Montserrat', sans-serif ;
+    @apply text-xl font-bold;
+}
+
+.main-grid > div:first-child .card .card-content h1 {
+    font-family: "Cookie",'Montserrat', sans-serif ;
+    @apply text-3xl;
+}
+
+.card .card-content a {
+    @apply mt-2 font-semibold inline-block border-b border-red-500 border-solid uppercase;
+}
+
+
+/**********************************/
+
+.products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -.5rem;
+}
+.products-grid > *{
+    @apply px-2;
+}
+/******  card component   *******/
+
+.productItem .product-header {
+    @apply relative overflow-hidden;
+    padding-top: 150%;
+}
+.productItem .product-heading {
+    @apply absolute top-0 left-0 z-50;
+}
+.productItem .img-wrapper {
+    @apply absolute inset-0;
+}
+.productItem .img-wrapper img{
+    @apply w-full h-full object-cover;
+}
+
+.productItem .product-header .links {
+    @apply absolute bottom-0 w-full z-40;
+}
+.productItem .product-header .links a {
+    display: inline-block;
+    background: white;
+    padding: .8rem;
+    border-radius: 50%;
+    border: #e6e6e6 2px solid;
+}
+
+.product-header .links a img {
+    widows: 35px;
+}
+.productItem .listoflinks {
+    @apply flex items-center justify-center;
+    transform: translateY(75px);
+    transition:transform .3s ease-in-out;
+}
+
+
+.listoflinks > li{
+    padding: 0.625rem;
+}
+
+
+.productItem:hover .img-wrapper ~ .links .listoflinks  {
+    transform: translateY(0);
+}
+
+.productItem .product-content {
+    
+    @apply py-8 text-center;
+}
+.productItem .product-content .price {
+    @apply font-semibold text-lg;
+}
+/*********************************/

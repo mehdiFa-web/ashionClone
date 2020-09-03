@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <div class="container mx-auto">
+    <div class="lg:flex lg:justify-between">
+      <div class="lg:flex lg:items-center">
+        <div class="flex justify-between py-4 px-4">
+          <div class="brand-wrapper">
+            <img src="./img/logo.png" alt="Brand logo">
+          </div>
+          <div>
+            <button id="toggler" class="toggler p-2 border border-black border-solid lg:hidden">
+              <img class="w-5" src="./icons/bars-solid.svg" alt="Nav toggler">
+            </button>
+          </div>
+        </div>
+      </div>
+      <nav id="nav" class="z-50 w-0 overflow-hidden mx-auto absolute inset-0 bg-transparnt-black-100
+                          lg:w-auto lg:static lg:bg-white lg:p-0 lg:m-0
+                          ">
+        <div id="inner-nav" class="bg-white max-w-nav h-full nav-transition overflow-hidden w-0 
+                                lg:w-auto lg:max-w-none
+                                    ">
+          <div class="py-4 px-6 lg:p-0">
+            <div class="flex justify-end mt-4 lg:hidden">
+              <button id="close" class="py-3 px-nav rounded-full border-solid border border-gray-90
+                                        
+                                        ">
+                <img class="w-2" src="./icons/times-solid.svg" alt="Close navbar">
+              </button>
+            </div>
+            <ul class="flex items-center justify-center mt-4 lg:hidden">
+              <li class="flex p-2"> <button><img class="w-5" src="./icons/search-solid.svg" alt="search button"></button> </li>
+              <li class="flex p-2"> <a href="#"><img class="w-5" src="./icons/heart-regular.svg" alt="favorite products"></a> </li>
+              <li class="flex p-2"> <a href="#"><img class="w-5" src="./icons/shopping-cart-solid.svg" alt="shopping cart"></a> </li>
+            </ul>
+            <div class="logo mt-4 lg:hidden">
+              <img src="./img/logo.png" alt="logo">
+            </div>  
+            <ul class="my-4 text-sm lg:flex">
+              <!--Home Women's Men's Shop Pages Blog Contact-->
+              <li class="py-1 lg:py-4 lg:px-2 font-semibold "><a href="#">Home</a></li>
+              <li class="py-1 lg:py-4 lg:px-2 font-semibold"><a href="#">Women's</a></li>
+              <li class="py-1 lg:py-4 lg:px-2 font-semibold"><a href="#">Men's</a></li>
+              <li class="py-1 lg:py-4 lg:px-2 font-semibold"><a href="#">Shop</a></li>
+              <li class="py-1 lg:py-4 lg:px-2 font-semibold"><a href="#">Pages</a></li>
+              <li class="py-1 lg:py-4 lg:px-2 font-semibold"><a href="#">Blog</a></li>
+              <li class="py-1 lg:py-4 lg:px-2 font-semibold"><a href="#">Contact</a></li>
+            </ul>
+            <ul class="lg:hidden">
+              <li class="text-sm login-register">
+                <a class="font-semibold" href="#">Login</a>
+                <a class="font-semibold" href="#">Register</a>
+              </li>
+            </ul>
+          </div>
+          
+        </div>
+      </nav>
+    </div>
+  </div>
+  </header>
+
+  <main>
+    <div class="main-grid">
+      <div class="col-1">
+        <div class="card h-full">
+          <div class="img-wrapper h-full">
+            <img class="h-full object-cover" src="./img/categories/category-1.jpg" alt="women">
+          </div>
+          <div class="card-content">
+            <div>
+              <h1>Women’s fashion</h1>
+              <p>Sitamet, consectetur adipiscing elit, sed do eiusmod tempor incidid-unt labore edolore magna aliquapendisse ultrices gravida.</p>
+              <a href="#">
+                shop now
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="card h-full">
+          <div class="img-wrapper h-full">
+            <img class="h-full object-cover" src="./img/categories/category-2.jpg" alt="women">
+          </div>
+          <div class="card-content">
+            <div>
+              <h1>Men’s fashion</h1>
+              <p>358 items</p>
+              <a href="#">
+                shop now
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card h-full">
+          <div class="img-wrapper h-full">
+            <img class="h-full object-cover" src="./img/categories/category-3.jpg" alt="women">
+          </div>
+          <div class="card-content">
+            <div>
+              <h1>Kid’s fashion</h1>
+              <p>358 items</p>
+              <a href="#">
+                shop now
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card h-full">
+          <div class="img-wrapper h-full">
+            <img class="h-full object-cover" src="./img/categories/category-4.jpg" alt="women">
+          </div>
+          <div class="card-content">
+            <div>
+              <h1>Cosmetics</h1>
+              <p>358 items</p>
+              <a href="#">
+                shop now
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-5">
+        <div class="card h-full">
+          <div class="img-wrapper h-full">
+            <img class="h-full object-cover" src="./img/categories/category-5.jpg" alt="women">
+          </div>
+          <div class="card-content">
+            <div>
+              <h1>Accessories</h1>
+              <p>358 items</p>
+              <a href="#">
+                shop now
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <section>
+    <div class="container mx-auto">
+      <div class="py-12 px-4">
+        <header>
+          <div class="md:flex md:items-center md:justify-between">
+            <div class="mb-3 md:mb-0">
+            <h3 class="inline border-b-2 border-red-400 border-solid font-semibold text-2xl uppercase">New Product</h3>
+            </div>
+            <ul class="flex flex-wrap font-light">
+              <li class="mr-4"><a class="inline-block px-1 border-b-2 border-red-400 border-solid" href="#">All</a></li>
+              <li class="mr-4"><a class="inline-block px-1" href="#">Women's</a></li>
+              <li class="mr-4"><a class="inline-block px-1" href="#">Men's</a></li>
+              <li class="mr-4"><a class="inline-block px-1" href="#">Kid's</a></li>
+              <li class="mr-4"><a class="inline-block px-1" href="#">Accessories</a></li>
+              <li ><a class="inline-block px-1" href="#">Cosmetics</a></li>
+            </ul>
+          </div>
+      </header>
+      <article>
+        <div class="products-grid py-12">
+          <div class="flex-6/12 md:flex-4/12 lg:flex-3/12">
+            <!--card component-->
+            <div class="productItem">
+              <div class="product-header">
+                <div class="product-heading">
+                  <h4 class="uppercase m-2 px-3 py-1 bg-green-500 text-white text-sm">
+                    new
+                  </h4>
+                </div>
+                <div class="img-wrapper">
+                  <img src="./img/product/product-1.jpg" alt="product item">
+                </div>
+                <div class="links">
+                  <ul class="listoflinks">
+                    <li>
+                      <a href="#">
+                        <img class="w-5" src="./icons/heart-regular.svg" alt="add to favorite products"></a>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img class="w-5" src="./icons/shopping-cart-solid.svg" alt="add to shopping cart">
+                      </a>
+                    </li>
+                  </ul>
+                  
+                </div>
+              </div>
+              <div class="product-content">
+                <h5><a href="#">Buttons tweed blazer</a></h5>
+                <span class="price">$59.0</span>
+              </div>
+            </div>
+            <!--end card component-->
+          </div>
+          <div class="flex-6/12 md:flex-4/12 lg:flex-3/12">
+            <!--card component-->
+            <div class="productItem">
+              <div class="product-header">
+                <div class="product-heading">
+                  <h4 class="uppercase m-2 px-3 py-1 bg-green-500 text-white text-sm">
+                    new
+                  </h4>
+                </div>
+                <div class="img-wrapper">
+                  <img src="./img/product/product-2.jpg" alt="product item">
+                </div>
+                <div class="links">
+                  <ul class="listoflinks">
+                    <li>
+                      <a href="#">
+                        <img class="w-5" src="./icons/heart-regular.svg" alt="add to favorite products"></a>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img class="w-5" src="./icons/shopping-cart-solid.svg" alt="add to shopping cart">
+                      </a>
+                    </li>
+                  </ul>
+                  
+                </div>
+              </div>
+              <div class="product-content">
+                <h5><a href="#">Buttons tweed blazer</a></h5>
+                <span class="price">$59.0</span>
+              </div>
+            </div>
+            <!--end card component-->
+          </div>
+          <div class="flex-6/12 md:flex-4/12 lg:flex-3/12">
+            <!--card component-->
+            <div class="productItem">
+              <div class="product-header">
+                <div class="product-heading">
+                  <h4 class="uppercase m-2 px-3 py-1 bg-green-500 text-white text-sm">
+                    new
+                  </h4>
+                </div>
+                <div class="img-wrapper">
+                  <img src="./img/product/product-3.jpg" alt="product item">
+                </div>
+                <div class="links">
+                  <ul class="listoflinks">
+                    <li>
+                      <a href="#">
+                        <img class="w-5" src="./icons/heart-regular.svg" alt="add to favorite products"></a>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img class="w-5" src="./icons/shopping-cart-solid.svg" alt="add to shopping cart">
+                      </a>
+                    </li>
+                  </ul>
+                  
+                </div>
+              </div>
+              <div class="product-content">
+                <h5><a href="#">Buttons tweed blazer</a></h5>
+                <span class="price">$59.0</span>
+              </div>
+            </div>
+            <!--end card component-->
+          </div>
+          <div class="flex-6/12 md:flex-4/12 lg:flex-3/12">
+            <!--card component-->
+            <div class="productItem">
+              <div class="product-header">
+                <div class="product-heading">
+                  <h4 class="uppercase m-2 px-3 py-1 bg-green-500 text-white text-sm">
+                    new
+                  </h4>
+                </div>
+                <div class="img-wrapper">
+                  <img src="./img/product/product-4.jpg" alt="product item">
+                </div>
+                <div class="links">
+                  <ul class="listoflinks">
+                    <li>
+                      <a href="#">
+                        <img class="w-5" src="./icons/heart-regular.svg" alt="add to favorite products"></a>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img class="w-5" src="./icons/shopping-cart-solid.svg" alt="add to shopping cart">
+                      </a>
+                    </li>
+                  </ul>
+                  
+                </div>
+              </div>
+              <div class="product-content">
+                <h5><a href="#">Buttons tweed blazer</a></h5>
+                <span class="price">$59.0</span>
+              </div>
+            </div>
+            <!--end card component-->
+          </div>
+          <div class="flex-6/12 md:flex-4/12 lg:flex-3/12">
+            <!--card component-->
+            <div class="productItem">
+              <div class="product-header">
+                <div class="product-heading">
+                  <h4 class="uppercase m-2 px-3 py-1 bg-green-500 text-white text-sm">
+                    new
+                  </h4>
+                </div>
+                <div class="img-wrapper">
+                  <img src="./img/product/product-5.jpg" alt="product item">
+                </div>
+                <div class="links">
+                  <ul class="listoflinks">
+                    <li>
+                      <a href="#">
+                        <img class="w-5" src="./icons/heart-regular.svg" alt="add to favorite products"></a>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img class="w-5" src="./icons/shopping-cart-solid.svg" alt="add to shopping cart">
+                      </a>
+                    </li>
+                  </ul>
+                  
+                </div>
+              </div>
+              <div class="product-content">
+                <h5><a href="#">Buttons tweed blazer</a></h5>
+                <span class="price">$59.0</span>
+              </div>
+            </div>
+            <!--end card component-->
+          </div>
+          <div class="flex-6/12 md:flex-4/12 lg:flex-3/12">
+            <!--card component-->
+            <div class="productItem">
+              <div class="product-header">
+                <div class="product-heading">
+                  <h4 class="uppercase m-2 px-3 py-1 bg-green-500 text-white text-sm">
+                    new
+                  </h4>
+                </div>
+                <div class="img-wrapper">
+                  <img src="./img/product/product-6.jpg" alt="product item">
+                </div>
+                <div class="links">
+                  <ul class="listoflinks">
+                    <li>
+                      <a href="#">
+                        <img class="w-5" src="./icons/heart-regular.svg" alt="add to favorite products"></a>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img class="w-5" src="./icons/shopping-cart-solid.svg" alt="add to shopping cart">
+                      </a>
+                    </li>
+                  </ul>
+                  
+                </div>
+              </div>
+              <div class="product-content">
+                <h5><a href="#">Buttons tweed blazer</a></h5>
+                <span class="price">$59.0</span>
+              </div>
+            </div>
+            <!--end card component-->
+          </div>
+          <div class="flex-6/12 md:flex-4/12 lg:flex-3/12">
+            <!--card component-->
+            <div class="productItem">
+              <div class="product-header">
+                <div class="product-heading">
+                  <h4 class="uppercase m-2 px-3 py-1 bg-green-500 text-white text-sm">
+                    new
+                  </h4>
+                </div>
+                <div class="img-wrapper">
+                  <img src="./img/product/product-7.jpg" alt="product item">
+                </div>
+                <div class="links">
+                  <ul class="listoflinks">
+                    <li>
+                      <a href="#">
+                        <img class="w-5" src="./icons/heart-regular.svg" alt="add to favorite products"></a>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img class="w-5" src="./icons/shopping-cart-solid.svg" alt="add to shopping cart">
+                      </a>
+                    </li>
+                  </ul>
+                  
+                </div>
+              </div>
+              <div class="product-content">
+                <h5><a href="#">Buttons tweed blazer</a></h5>
+                <span class="price">$59.0</span>
+              </div>
+            </div>
+            <!--end card component-->
+          </div>
+          <div class="flex-6/12 md:flex-4/12 lg:flex-3/12">
+            <!--card component-->
+            <div class="productItem">
+              <div class="product-header">
+                <div class="product-heading">
+                  <h4 class="uppercase m-2 px-3 py-1 bg-green-500 text-white text-sm">
+                    new
+                  </h4>
+                </div>
+                <div class="img-wrapper">
+                  <img src="./img/product/product-8.jpg" alt="product item">
+                </div>
+                <div class="links">
+                  <ul class="listoflinks">
+                    <li>
+                      <a href="#">
+                        <img class="w-5" src="./icons/heart-regular.svg" alt="add to favorite products"></a>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img class="w-5" src="./icons/shopping-cart-solid.svg" alt="add to shopping cart">
+                      </a>
+                    </li>
+                  </ul>
+                  
+                </div>
+              </div>
+              <div class="product-content">
+                <h5><a href="#">Buttons tweed blazer</a></h5>
+                <span class="price">$59.0</span>
+              </div>
+            </div>
+            <!--end card component-->
+          </div>
+        </div>
+      </article>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
