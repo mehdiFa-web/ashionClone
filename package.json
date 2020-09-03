@@ -29,6 +29,7 @@
   },
   "dependencies": {
     "autoprefixer": "^9.8.6",
-    "tailwindcss": "^1.7.5"
+    "tailwindcss": "^1.7.5",
+    "tiny-slider": "^2.9.3"
   }
 }

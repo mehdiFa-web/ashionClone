@@ -6,7 +6,6 @@
 @tailwind utilities;
 
 
-
 @font-face {
     font-family: "Cookie";
     src: url('../fonts/Cookie-Regular.ttf');
@@ -32,7 +31,7 @@ body {
 }
 
 
-.newproducts-container {
+.newproducts-container{ 
     max-width: 70rem;
 }
 @screen md {
@@ -120,13 +119,19 @@ body {
 
 /**********************************/
 
-.products-grid {
+.products-grid,.trandbestproducts ,.mini-cards {
     display: flex;
     flex-wrap: wrap;
     margin: 0 -.5rem;
 }
-.products-grid > *{
+.products-grid > *,
+.trandbestproducts > * 
+{
     @apply px-2;
+}
+
+.mini-cards > * {
+    @apply p-2;
 }
 /******  card component   *******/
 
@@ -181,4 +186,50 @@ body {
 .productItem .product-content .price {
     @apply font-semibold text-lg;
 }
-/*********************************/
+/****************banner*****************/
+.banner-1 {
+    background-image: url('../img/banner/banner-1.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+}
+
+
+.slider-item {
+    @apply text-center py-20 px-4;
+}
+.slider-item  .slider-header {
+    @apply uppercase text-red-500;
+}
+.slider-item  .slider-info {
+    font-family: "Cookie",'Montserrat', sans-serif ;
+    @apply text-6xl;
+}
+
+.slider-item  .slider-cta {
+    @apply inline-block font-bold border-b-2 border-solid border-red-500 py-1;
+    @apply uppercase text-sm;
+}
+
+
+
+/******
+best seller 
+feature
+hot trends
+*******/
+
+
+.btf-heading h6{
+    @apply text-lg font-semibold inline-block uppercase relative;
+}
+
+.btf-heading h6::after {
+    content: "";
+    @apply bg-red-500;
+    position: absolute;
+    display: block;
+    width: 60%;
+    height: 2px;
+}
