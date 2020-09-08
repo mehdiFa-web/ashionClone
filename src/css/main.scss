@@ -31,7 +31,8 @@ body {
 }
 
 
-.newproducts-container{ 
+.newproducts-container,
+.count-down{ 
     max-width: 70rem;
 }
 @screen md {
@@ -232,4 +233,75 @@ hot trends
     display: block;
     width: 60%;
     height: 2px;
+}
+
+.discount-wrapper {
+    width: 75%;
+}
+
+.countdown-wrapper {
+   text-align: center;
+    .circle {
+      
+       
+       &-content {
+        line-height: 32px;
+        position: relative;
+        z-index: 7;
+        .disc {
+                display: block;
+                padding-top: 56px;
+                font-size: 12px;
+                font-weight: 400;
+        }
+
+        .sale {
+            @apply font-bold;
+            margin-top: 6px;
+            span {
+                @apply text-red-500;
+            }
+        }
+        &::before{
+            content: "";
+            display: block;
+            position: absolute;
+            z-index: -1;
+            width: 13rem;
+            height: 13rem;
+            left: 50%;
+            border-radius: 100%;
+            transform: translateX(-50%);
+            background: white;
+        }
+       }
+    }
+    .count {
+        margin-top: 53px;
+
+
+        a {
+            @apply mt-4 font-semibold inline-block border-b border-red-500 border-solid uppercase;
+        }
+    }
+
+    
+    &-content {
+        background: #f4f4f4;
+        &-heading {
+            @apply text-red-500 text-6xl;
+            font-family: "Cookie",'Montserrat', sans-serif ;
+        }
+    }
+    
+}
+
+#demo {
+
+    font-size:25px;
+    font-weight: bold;
+    span {
+        font-weight: 500;
+        font-size:1rem;
+    }
 }

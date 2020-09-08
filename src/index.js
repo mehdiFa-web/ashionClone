@@ -1,6 +1,6 @@
 import './css/main.scss';
 import Navbar from './Components/Navbar/index.js';
-
+import CountDown  from "./Components/CountDown.js"
 
 new Navbar({
   Menu : '#nav',
@@ -9,3 +9,6 @@ new Navbar({
   width : '19',
   close : '#close'
 })
+
+
+CountDown()
