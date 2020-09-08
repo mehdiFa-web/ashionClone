@@ -305,3 +305,18 @@ hot trends
         font-size:1rem;
     }
 }
+
+
+
+
+.benefits {
+
+    font-size: .9rem;
+    &-heading {
+        color: #111111;
+        font-weight: bold;
+    }
+    &-paragraph {
+      color: #494949;
+    }
+}
