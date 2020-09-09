@@ -9,4 +9,4 @@
 
 
 
-###### build with [tailwindcss](https://tailwindcss.com/docs/installation)
+###### built with [tailwindcss](https://tailwindcss.com/docs/installation)
