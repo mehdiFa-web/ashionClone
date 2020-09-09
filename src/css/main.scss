@@ -31,9 +31,12 @@ body {
 }
 
 
-.newproducts-container,
-.count-down{ 
-    max-width: 70rem;
+@screen xl {
+    .newproducts-container,
+    .count-down{ 
+        width: 100%;
+        max-width: 70rem;
+    }
 }
 @screen md {
     .main-grid {
@@ -298,15 +301,23 @@ hot trends
 
 #demo {
 
-    font-size:25px;
+    font-size:15px;
     font-weight: bold;
     span {
         font-weight: 500;
-        font-size:1rem;
+        font-size:.7rem;
     }
 }
 
-
+@media screen and (min-width:412px) {
+    #demo {
+        font-size:25px;
+        span {
+            font-weight: 500;
+            font-size:1rem;
+        }
+    }
+}
 
 
 .benefits {
@@ -356,4 +367,40 @@ hot trends
         }
     }
     
+}
+
+
+.newsletter {
+   
+    &-form {
+        position: relative;
+
+        .input {
+            border: solid #cacaca 1px;
+            border-radius: 2rem;
+            display: flex;
+            overflow: hidden;
+            padding: 8px 1.3rem;
+            width: 100%;
+            &:focus {
+                outline: none;
+            }
+        }
+    
+        .submit {
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 10px 1.5rem;
+            border-radius: 2rem;
+            background: #e50f0f;
+            color: white;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: background .2s ease-in;
+            &:hover {
+                background: darken(#e50f0f, 5%);
+            }
+        }
+    }
 }
